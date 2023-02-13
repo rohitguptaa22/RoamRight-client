@@ -47,7 +47,7 @@ export default function SignUp() {
 	return (
 		<ThemeProvider theme={theme}>
 			<Container component='main' maxWidth='xs'>
-				{/* <CssBaseline /> */}
+				<CssBaseline />
 				<Box
 					sx={{
 						marginTop: 8,
@@ -70,27 +70,17 @@ export default function SignUp() {
 						sx={{ mt: 3 }}
 					>
 						<Grid container spacing={2}>
-							<Grid item xs={12} sm={6}>
+							{/* <Grid item xs={12}>
 								<TextField
 									autoComplete='given-name'
-									name='firstName'
+									name='Name'
 									required
 									fullWidth
-									id='firstName'
-									label='First Name'
+									id='Name'
+									label='Name'
 									autoFocus
 								/>
-							</Grid>
-							<Grid item xs={12} sm={6}>
-								<TextField
-									required
-									fullWidth
-									id='lastName'
-									label='Last Name'
-									name='lastName'
-									autoComplete='family-name'
-								/>
-							</Grid>
+							</Grid> */}
 							<Grid item xs={12}>
 								<TextField
 									required

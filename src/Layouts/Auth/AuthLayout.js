@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper } from "@mui/material";
+import { Grid, Paper } from "@mui/material";
 
 // const useStyles = makeStyles((theme) => ({
 // 	root: {
@@ -39,9 +39,9 @@ const LoginLayout = ({ children }: LoginLayoutProps) => {
 	// const classes = useStyles();
 	return (
 		<main className='flex h-screen'>
-			<Paper className='flex w-full flex-col items-center justify-center h-full shadow-2xl'>
-				{children}
-			</Paper>
+			<Grid container>
+				<Paper>{children}</Paper>
+			</Grid>
 		</main>
 	);
 };
