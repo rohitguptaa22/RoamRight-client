@@ -1,7 +1,14 @@
 import React from "react";
-
+import { Header, Footer } from "../../Layouts/Home";
+import MainContent from "./MainContent";
 const index = () => {
-	return <div>Home</div>;
+	return (
+		<>
+			<Header />
+			<MainContent />
+			<Footer />
+		</>
+	);
 };
 
 export default index;
