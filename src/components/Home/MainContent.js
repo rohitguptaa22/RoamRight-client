@@ -27,11 +27,6 @@ const MainContent = () => {
 			})
 			.catch((err) => console.log(err));
 	}, []);
-	// const dataArr =
-	// console.log();
-	// tours.map((tour) => {
-	// 	console.log(tour.name);
-	// });
 	tours.map((tour) => {
 		console.log(tour.name);
 	});
@@ -39,7 +34,7 @@ const MainContent = () => {
 	return (
 		// <main>
 		<div className='pb-5'>
-			<Container fixed>
+			{/* <Container fixed>
 				<Typography
 					align='center'
 					variant='h4'
@@ -49,11 +44,11 @@ const MainContent = () => {
 				>
 					All tours
 				</Typography>
-			</Container>
-			<Container>
+			</Container> */}
+			<Container sx={{ padding: 6 }}>
 				{/* <Grid sx={{ flexGrow: 1 }} container spacing={2}> */}
 				{/* <Grid item xs={12}> */}
-				<Grid container justifyContent='left' spacing={4}>
+				<Grid container justifyContent='left' spacing={6}>
 					{!tours
 						? null
 						: tours.map((value) => (

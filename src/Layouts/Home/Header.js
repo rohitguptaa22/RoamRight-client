@@ -7,9 +7,14 @@ import {
 	Toolbar,
 	Typography,
 } from "@mui/material";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo-white.png";
 
 const Header = () => {
+	const navigate = useNavigate();
+	// const handleLogin = ( ) =>{
+	// 	naviga
+	// }
 	return (
 		<>
 			<Box
@@ -17,39 +22,47 @@ const Header = () => {
 					paddingBottom: 5,
 				}}
 			>
-				<AppBar position='static' style={{ background: "#444" }}>
-					<Toolbar>
-						<Box
-							// alignSelf='center'
-							component='img'
-							sx={{
-								height: 50,
-							}}
-							alt='natours.png'
-							src={logo}
-						/>
-
+				<AppBar
+					position='static'
+					style={{
+						background: "#444",
+						height: "6rem",
+						// alignItems: "center",
+						justifyContent: "center",
+					}}
+				>
+					<Toolbar sx={{ position: "relative" }}>
 						<Typography
 							// align='center'
-							variant='h4'
+							variant='h5'
 							component='div'
-							sx={{ flexGrow: 1 }}
+							sx={{ flexGrow: 1, width: "90%" }}
 						>
-							Natours
+							All Tours
 						</Typography>
+						<img
+							src={logo}
+							alt='new-logo'
+							style={{
+								height: 50,
+								position: "absolute",
+								left: "46%",
+								// transform: "translateX(-50%)",
+							}}
+						/>
+						<Button
+							color='inherit'
+							sx={{ padding: 1 }}
+							onClick={() => navigate("/login")}
+						>
+							Login
+						</Button>
+						<Button color='inherit' sx={{ padding: 1 }} variant='outlined'>
+							Sign Up
+						</Button>
 					</Toolbar>
 				</AppBar>
 			</Box>
-			{/* <AppBar style={{ background: "#444" }} className='flex p-auto'>
-				<Toolbar className='flex'>
-					<Button>
-						<Typography>All Tours</Typography>
-					</Button>
-					<Typography variant='h6' className='flex justify-center items-center'>
-						Icon
-					</Typography>
-				</Toolbar>
-			</AppBar> */}
 		</>
 	);
 };
