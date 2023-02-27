@@ -18,8 +18,8 @@ const RootRouter = () => {
 				}}
 			>
 				<Routes>
-					<Route exact path='/' element={<App />} />
-					<Route exact path='/login' element={<Login />} />
+					<Route exact path='/' element={<Login />} />
+					<Route exact path='/home' element={<App />} />
 				</Routes>
 			</div>
 		</Router>
