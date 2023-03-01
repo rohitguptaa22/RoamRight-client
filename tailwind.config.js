@@ -2,6 +2,9 @@ module.exports = {
 	purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
+		colors: {
+			bermuda: "#a8222217;",
+		},
 		extend: {
 			margin: {
 				320: "320px",

@@ -4,7 +4,8 @@
 
 body{
     font-family: 'Lato', san-serif;
-    background-color: gray
+    background-color: white;
+    overflow-x: hidden
 }
 
 
