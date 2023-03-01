@@ -27,7 +27,6 @@ const Header = () => {
 					style={{
 						background: "#444",
 						height: "6rem",
-						// alignItems: "center",
 						justifyContent: "center",
 					}}
 				>
@@ -57,7 +56,11 @@ const Header = () => {
 						>
 							Login
 						</Button>
-						<Button color='inherit' sx={{ padding: 1 }} variant='outlined'>
+						<Button
+							color='inherit'
+							sx={{ padding: 1, width: "15vh", margin: 5 }}
+							variant='outlined'
+						>
 							Sign Up
 						</Button>
 					</Toolbar>

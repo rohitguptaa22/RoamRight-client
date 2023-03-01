@@ -6,17 +6,8 @@ import Login from "./components/Login";
 
 const App = () => {
 	return (
-		// <div className=' flex items-center justify-center text-3xl font-bold underline'>
-		// <>
-		// 	<Header />
-		// 	<br />
-		// 	<Home />
-		// 	<br />
-		// 	<Footer />
-		// </>
 		<div className='p-4'>
 			<Box className='bg-bermuda h-full mr-4 '>
-				<Login />
 				<Home />
 			</Box>
 		</div>
